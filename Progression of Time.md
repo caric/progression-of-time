@@ -21,7 +21,7 @@ case "lifespan":
 value = (today.year - birthday.year) / lifespan.year * 100;
 break;
 case "year":
-value = today.month / 12 * 100
+value = ((today.month-1)*30+today.day) / 365 * 100
 break;
 case "month":
 value = today.day / today.daysInMonth * 100
